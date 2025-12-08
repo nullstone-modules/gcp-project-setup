@@ -1,0 +1,14 @@
+org_name: nullstone
+name: gcp-project-setup
+friendly_name: GCP Project Setup
+description: Configures a GCP project to follow compliance and governance
+category: block
+subcategory: ""
+provider_types:
+    - gcp
+platform: gcp
+subplatform: ""
+type: ""
+appCategories: []
+is_public: true
+tool_name: opentofu
