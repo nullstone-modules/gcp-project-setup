@@ -7,7 +7,7 @@ resource "google_project_iam_member" "developers_logging_viewer" {
 
   project = local.project_id
   role    = "roles/logging.viewer"
-  member = "group:${var.developers_group}"
+  member  = "group:${var.developers_group}"
 }
 
 resource "google_project_iam_member" "developers_monitoring_viewer" {
@@ -15,7 +15,7 @@ resource "google_project_iam_member" "developers_monitoring_viewer" {
 
   project = local.project_id
   role    = "roles/monitoring.viewer"
-  member = "group:${var.developers_group}"
+  member  = "group:${var.developers_group}"
 }
 
 resource "google_project_iam_member" "developers_run_developer" {
@@ -23,7 +23,7 @@ resource "google_project_iam_member" "developers_run_developer" {
 
   project = local.project_id
   role    = "roles/run.developer"
-  member = "group:${var.developers_group}"
+  member  = "group:${var.developers_group}"
 }
 
 resource "google_project_iam_member" "developers_k8s_developer" {
@@ -31,7 +31,7 @@ resource "google_project_iam_member" "developers_k8s_developer" {
 
   project = local.project_id
   role    = "roles/container.developer"
-  member = "group:${var.developers_group}"
+  member  = "group:${var.developers_group}"
 }
 
 resource "google_project_iam_member" "developers_storage_object_admin" {
@@ -39,7 +39,7 @@ resource "google_project_iam_member" "developers_storage_object_admin" {
 
   project = local.project_id
   role    = "roles/storage.objectAdmin"
-  member = "group:${var.developers_group}"
+  member  = "group:${var.developers_group}"
 }
 
 resource "google_project_iam_member" "developers_storage_admin" {
@@ -47,7 +47,7 @@ resource "google_project_iam_member" "developers_storage_admin" {
 
   project = local.project_id
   role    = "roles/storage.admin"
-  member = "group:${var.developers_group}"
+  member  = "group:${var.developers_group}"
 }
 
 resource "google_project_iam_member" "developers_pubsub_admin" {
@@ -55,7 +55,7 @@ resource "google_project_iam_member" "developers_pubsub_admin" {
 
   project = local.project_id
   role    = "roles/pubsub.admin"
-  member = "group:${var.developers_group}"
+  member  = "group:${var.developers_group}"
 }
 
 resource "google_project_iam_member" "developers_workflows_admin" {
@@ -63,5 +63,5 @@ resource "google_project_iam_member" "developers_workflows_admin" {
 
   project = local.project_id
   role    = "roles/workflows.admin"
-  member = "group:${var.developers_group}"
+  member  = "group:${var.developers_group}"
 }
